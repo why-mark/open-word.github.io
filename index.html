@@ -62,6 +62,14 @@
         </li>
             </ul>
 </div>
-
+<script>
+    fetch('https://quan.suning.com/getSysTime.do')
+  .then(function(response) {
+    return response.json();
+  })
+  .then(function(myJson) {
+    a=myJson.sysTime2;var b =document.getElementsByClassName("card-text p-2")[0];b.innerText="时间："+a
+  });
+<script>
 
 </body><style type="text/css" id="x_style_extra_css_id">data:text/css,html,body,a,div,p,img,textarea{-webkit-touch-callout:text !important;-webkit-user-select:text !important;user-select:text !important;}</style></html>
